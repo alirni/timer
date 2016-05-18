@@ -17,27 +17,32 @@
   startTime = function() {
     console.log('startTime');
 
-    while ($sec != 0) {
+    var i = setInterval( function () {
       $sec --;
-      updateTime ();
+      console.log($sec);
+      $('.second').html($sec);
+
       if ($sec == 0) {
         $min --;
-        updateTime ();
+        console.log($min);
+        $('.minute').html($min);
+
         if ($min == 0 ) {
+          clearInterval (i);
           endGame();
         }
         else {
           $sec = 60;
-          updateTime ();
+          console.log($sec);
         }
       }
-    }
+    },200);
   },
 
-  updateTime = function () {
-    console.log('updateTime');
+  endGame = function () {
+    console.log('endGame');
 
-    
+
   },
 
   start = function () {
