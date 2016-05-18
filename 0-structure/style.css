@@ -24,14 +24,14 @@ body {
   min-height: 5em;
 }
 
-.btn-strt {
+.btn-start {
   min-height: 1em;
   background-color: #010C1E;
   border-radius: 20px 20px 0 0;
   margin: auto;
 }
 
-.btn-strt:hover {
+.btn-start:hover {
   background-color: #02183B;
 }
 
