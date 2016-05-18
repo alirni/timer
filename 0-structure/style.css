@@ -5,7 +5,7 @@ body {
 .container {
   /*outline: 1px solid red;*/
   min-height: 5em;
-  margin: .5em auto;
+  margin: 2em auto;
 }
 
 /*.container > * {
@@ -24,10 +24,18 @@ body {
   min-height: 5em;
 }
 
+.btn-strt {
+  min-height: 1.2em;
+  background-color: #010C1E;
+  border-radius: 20px 20px 0 0;
+  margin: auto;
+
+}
+
 .timer {
   font-size: 6em;
   min-height: 1em;
-  margin: .5em auto;
+  margin: auto;
   line-height: 1.9em;
   text-align: center;
   border: 30px solid #010C1E;
