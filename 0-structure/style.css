@@ -1,0 +1,46 @@
+body {
+  font-size: 20px;
+}
+
+.container {
+  outline: 1px solid red;
+  min-height: 5em;
+  margin: .5em auto;
+}
+
+.container > * {
+  outline: 1px solid blue;
+}
+
+.container > * > * {
+  outline: 1px solid green;
+}
+
+.container > * > * > * {
+  outline: 1px solid black;
+}
+
+.main {
+  min-height: 5em;
+}
+
+.timer {
+  font-size: 5em;
+  min-height: 1em;
+  margin: .5em auto;
+  line-height: 1.9em;
+  text-align: center;
+
+}
+
+.minute {
+  min-height: 2em;
+}
+
+.split {
+  min-height: 2em;
+}
+
+.second {
+  min-height: 2em;
+}
