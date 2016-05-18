@@ -25,11 +25,14 @@ body {
 }
 
 .btn-strt {
-  min-height: 1.2em;
+  min-height: 1em;
   background-color: #010C1E;
   border-radius: 20px 20px 0 0;
   margin: auto;
+}
 
+.btn-strt:hover {
+  background-color: #02183B;
 }
 
 .timer {
