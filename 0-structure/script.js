@@ -16,14 +16,17 @@
 
   startTime = function() {
     console.log('startTime');
-    while ($sec === 0) {
+
+    while ($sec != 0) {
       $sec --;
-      if ($sec === 0) {
+      if ($sec == 0) {
         $min --;
-        if ($min === 0 ) {
+        if ($min == 0 ) {
           endGame();
         }
-        $sec = 60;
+        else {
+          $sec = 60;
+        }
       }
     }
   },
