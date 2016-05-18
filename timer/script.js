@@ -9,36 +9,42 @@
 
   $btnstart = $('.btn-start'),
 
-  $end = $('.endgame'),
+  $end = $('.endtime'),
 
   startTime = function() {
     console.log('startTime');
 
+    $end.removeClass('active');
+
+    var sec = $sec;
+    $('.second').html($sec);
+    var min = $min;
+    $('.minute').html($min);
+
     var i = setInterval( function () {
-      $sec --;
-      console.log($sec);
-      $('.second').html($sec);
+      sec --;
+      console.log(sec);
+      $('.second').html(sec);
 
-      if ($sec == 0) {
-        $min --;
-        console.log($min);
-        $('.minute').html($min);
+      if (sec == 0) {
+        min --;
+        console.log(min);
+        $('.minute').html(min);
 
-        if ($min == 0 ) {
+        if (min == 0 ) {
           clearInterval (i);
           endTime();
         }
         else {
-          $sec = 60;
-          console.log($sec);
+          sec = 60;
+          console.log(sec);
         }
       }
-    },200);
+    },1000);
   },
 
   endTime = function () {
     console.log('endGame');
-
     $end.addClass('active');
   },
 

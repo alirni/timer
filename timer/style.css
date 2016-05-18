@@ -3,12 +3,12 @@ body {
 }
 
 .container {
-  outline: 1px solid red;
+  /*outline: 1px solid red;*/
   min-height: 5em;
   margin: 2em auto;
 }
 
-.container > * {
+/*.container > * {
   outline: 1px solid blue;
 }
 
@@ -18,10 +18,11 @@ body {
 
 .container > * > * > * {
   outline: 1px solid black;
-}
+}*/
 
 .main {
   min-height: 5em;
+  position: relative;
 }
 
 .btn-start {
@@ -64,12 +65,16 @@ body {
   font-size: 6em;
   min-height: 1em;
   margin: auto;
-  line-height: 1.9em;
+  line-height: 2em;
   text-align: center;
   border: 30px solid #010C1E;
   border-radius: 40px;
   background-color: #FFCDD2;
   color: #D50000;
+  position: absolute;
+  z-index: 2;
+  top: 20px;
+  left: 48px;
 }
 
 .active {
