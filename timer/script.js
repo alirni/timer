@@ -29,6 +29,12 @@
         }
       }
     }
+
+  updateTime = function () {
+    console.log('updateTime');
+
+
+
   },
 
   start = function () {
