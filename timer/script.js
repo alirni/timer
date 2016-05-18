@@ -9,10 +9,7 @@
 
   $btnstart = $('.btn-start'),
 
-  endGame = function () {
-    console.log('endGame');
-
-  },
+  $end = $('.endgame'),
 
   startTime = function() {
     console.log('startTime');
@@ -29,7 +26,7 @@
 
         if ($min == 0 ) {
           clearInterval (i);
-          endGame();
+          endTime();
         }
         else {
           $sec = 60;
@@ -39,10 +36,10 @@
     },200);
   },
 
-  endGame = function () {
+  endTime = function () {
     console.log('endGame');
 
-
+    $end.addClass('active');
   },
 
   start = function () {
